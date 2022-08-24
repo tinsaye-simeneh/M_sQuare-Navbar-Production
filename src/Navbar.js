@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
 
-export const Navbar = () => {
-        return(
-            <div className="rounded bg-white d-block"></div>
-        )
+export default function Navbar() {
+  return (
+    <div className="container text-white rounded bg-black d-block">
+      <div className="row">
+        <div className="col-md-12">
+            Test
+        </div>
+      </div>
+    </div>
+  );
 }
