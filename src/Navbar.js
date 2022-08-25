@@ -10,10 +10,18 @@ export default function Navbar() {
         </div>
         <div className="col-md-6">
           <div className="row">
-            <div className="col-md-2 text-center"><a href="/Home">Home</a></div>
-            <div className="col-md-3 text-center"><a href="/About">About Us</a></div>
-            <div className="col-md-2 text-center"><a  href="/Service">Services</a></div>
-            <div className="col-md-3 align-center text-center"><a  href="/Contact">Contact Us</a></div>
+            <div className="col-md-2 text-center">
+              <a href="/Home" className="text-dark text-decoration-none">Home</a>
+            </div>
+            <div className="col-md-3 text-center">
+              <a href="/About" className="text-dark text-decoration-none">About Us</a>
+            </div>
+            <div className="col-md-2 text-center">
+              <a href="/Service" className="text-dark text-decoration-none">Services</a>
+            </div>
+            <div className="col-md-3 align-center text-center">
+              <a href="/Contact" className="text-dark text-decoration-none">Contact Us</a>
+            </div>
             <button
               href="#account"
               className="border-0 text-white rounded col-md-2"
