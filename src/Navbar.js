@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "./assets/img/logo/logo.png";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 export default function Navbar() {
   return (
@@ -11,11 +13,12 @@ export default function Navbar() {
             <img src={Logo} alt="MsQuare Logo" />
           </a>
           </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon bg-dark"></span>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarNav">
         
         <div className="col-md-12">
           <div className="row">
