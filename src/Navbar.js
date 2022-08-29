@@ -3,14 +3,21 @@ import Logo from "./assets/img/logo/logo.png";
 
 export default function Navbar() {
   return (
+    <nav class="navbar navbar-expand-lg">
     <div className="container mt-4 text-dark shadow-lg px-5 p-3 mx-auto mb-5 rounded">
-      <div className="row">
-        <div className="col-md-6">
-          <a href="/Home">
+      
+    <div className="col-md-6">
+      <a href="/Home" className="navbar-brand">
             <img src={Logo} alt="MsQuare Logo" />
           </a>
-        </div>
-        <div className="col-md-6">
+          </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon bg-dark"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <div className="col-md-12">
           <div className="row">
             <div className="col-md-2 text-center">
               <a href="/Home" className="text-dark text-decoration-none">
@@ -42,6 +49,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </nav>
   );
 }
